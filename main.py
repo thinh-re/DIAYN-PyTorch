@@ -1,9 +1,9 @@
-import gym
-from Brain import SACAgent
-from Common import Play, Logger, get_params
+import gymnasium as gym
 import numpy as np
 from tqdm import tqdm
-import mujoco_py
+
+from Brain import SACAgent
+from Common import Logger, Play, get_params
 
 
 def concat_state_latent(s, z_, n):
